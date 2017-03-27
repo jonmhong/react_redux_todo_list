@@ -14,7 +14,7 @@ app.use(express.static('./dist'));
 
 // if we get a request to the root, we send the client to the client/index.html
 app.use('/', function (req, res) {
-	res.sendFild(path.resolve('client/index.html'));
+	res.sendFile(path.resolve('client/index.html'));
 })
 
 // what port we're listening to for incoming traffic
